@@ -1,0 +1,82 @@
+body {
+    
+    background-image: url(fundo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.container {
+    
+    
+    margin: 20px auto;
+    width: 900px;
+   
+    
+}
+
+header h1 {
+    
+    font-size: 50px;
+    margin-left: 200px;
+}
+
+article {
+    
+    background-color: aliceblue;
+    padding: 5px;
+    border: 1px solid red;
+    width: 600px;
+    margin: 20px auto;
+    
+}
+
+article h2 {
+    
+    font-size: 30px;
+    padding-left: 0;
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+    margin: 0;
+}
+
+article img {
+    
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    
+}
+
+section {
+    
+    float: left;
+}
+
+.clear { /* para a imagem nao "ficar fora" quando usa o float */
+clear: both;
+}
+
+aside{
+    float:right;
+    width: 240px;
+    height: 180px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: beige;
+}
+
+aside h3{
+    
+    margin-top: 0;
+    font-size: 22px;
+    border-bottom: 1px dashed black;
+    
+}
+
+aside ul li{
+    
+    
+}
