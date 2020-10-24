@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document dai</title>
+</head>
+<body>
+    
+<p><button onclick="alert(aluno01.ra)">RA aluno01</button>
+<button onclick="alert(aluno01.nome)">Nome aluno01</button></p>
+<p><button onclick="alert(aluno02.ra)">RA aluno02</button>
+<button onclick="alert(aluno02.nome)">Nome aluno02</button></p>
+<p><button onclick="alert(aluno03.ra)">RA aluno03</button>
+<button onclick="alert(aluno03.nome)">Nome aluno03</button></p>
+    
+    <script>
+    
+        var aluno01 = {
+        
+            ra:"00300008000",
+            nome:"Joao"
+        }
+        
+        var aluno02 = new Object();
+            aluno02.ra = "00300007000";
+            aluno02.nome = "Pedro";
+    
+        var aluno03 = {};
+            aluno03["ra"]="00300006000"
+            aluno03["nome"]="Maria";
+    
+     </script>
+    
+</body>
+</html>
