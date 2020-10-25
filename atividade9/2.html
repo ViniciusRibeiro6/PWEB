@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+<script>
+    
+    function Conta() {
+        
+        var nomCorrentista;
+        var banco;
+        var numConta;
+        var saldo;
+        
+        this.getNomCorrentista = function (){
+            
+            return nomCorrentista;
+        };
+        
+        this.setNomCorrentista = function (value){
+            
+            nomCorrentista = value;
+        };
+       this.getBanco = function (){
+            
+            return banco;
+        };
+         this.setBanco = function (value){
+            
+            banco = value;
+        };
+        
+        this.setNumConta = function (value){
+            
+            numConta = value;
+        };
+       this.getNumConta = function (){
+            
+            return numConta;
+        };
+        
+        this.setSaldo = function (value){
+            
+            saldo = value;
+        };
+       this.getSaldo = function (){
+            
+            return saldo;
+        };
+        
+    }
+    
+    function ContaCorrente (){
+        
+        var saldoEspecial;
+        
+        this.getSaldoEspecial = function (){
+            
+            return saldoEspecial;
+        };
+        
+        this.setSaldoEspecial = function (value){
+            
+            saldoEspecial = value;
+        };
+        
+    }
+    
+    function ContaPoupanca (){
+        
+        var contaComJuros;
+        
+        this.getContaComJuros = function(){
+            return contaComJuros;
+            
+        };
+        
+        this.setContaComJuros = function(value){
+            contaComJuros = value;
+            
+        };
+        
+     }
+    
+    ContaCorrente.prototype = new Conta();
+    ContaPoupanca.prototype = new Conta();
+    
+    pContaCorrente = new ContaCorrente();
+    pContaCorrente.setNomCorrentista('Jose');
+    pContaCorrente.setBanco('Bradesco');
+    pContaCorrente.setNumConta('9999999');
+    pContaCorrente.setSaldo('R$ 2000,00');
+    pContaCorrente.setSaldoEspecial('R$ 2500,00');
+    
+    pContaPoupanca = new ContaPoupanca();
+    pContaPoupanca.setNomCorrentista('Livia');
+    pContaPoupanca.setBanco('Bradesco');
+    pContaPoupanca.setNumConta('8888888');
+    pContaPoupanca.setSaldo('R$ 16.000,00');
+    pContaPoupanca.setContaComJuros('R$ 18.000,00');
+    
+    alert('CONTA CORRENTE' + '\n'+'\n'+
+        pContaCorrente.getNomCorrentista() + '\n' +
+        pContaCorrente.getBanco() + '\n' +
+        pContaCorrente.getNumConta() + '\n' +
+        pContaCorrente.getSaldo() + '\n' +
+        pContaCorrente.getSaldoEspecial() + '\n'
+          );
+    
+    alert('CONTE POUPANCA' + '\n' + '\n'+
+        pContaPoupanca.getNomCorrentista() + '\n' +
+        pContaPoupanca.getBanco() + '\n' +
+        pContaPoupanca.getNumConta() + '\n' +
+        pContaPoupanca.getSaldo() + '\n' +
+        pContaPoupanca.getContaComJuros() + '\n' 
+    
+    
+    );
+         
+         
+        
+    
+</script>
+    
+</body>
+</html>
