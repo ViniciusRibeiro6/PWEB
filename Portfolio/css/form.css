@@ -1,0 +1,184 @@
+@font-face{
+    
+    font-family:OpenSans;
+    src: url(../font/OpenSans-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    font-family: OpenSans, sans-serif;
+}
+
+body{background-color: #edf0ff;}
+
+.todo{
+    
+    
+    font-size: 1rem;
+    padding: 0 10% 0 10% ;
+    margin: auto;
+    max-width: 1920px;
+}
+
+.topo{
+    
+    background-color: #0031ff;
+    height: 10%x;
+    width: auto;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    color: white;
+    box-sizing: border-box; 
+}
+
+.menu{
+    
+    background-color: #0085fa;
+    display: flex;
+
+}
+
+.menu a {
+    
+    text-align: center;
+    text-decoration: none;
+    color:beige;
+    padding: 10px 20px;
+}
+
+.menu a:hover{
+    
+    background-color:blueviolet;
+}
+
+.centro{
+    
+    margin: 0;
+    padding: 60px 0;
+    display: flex;
+}
+
+.conteudo{
+    
+    background-color: white;
+    padding: 50px 20px 50px 50px;
+    width: 50%;
+}
+
+.moldura{
+    
+    margin-left: 30px;
+    height: auto;
+    width: 20rem;
+    float: right;
+    overflow: hidden;
+}
+
+.moldura img {
+    
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    
+}
+
+.moldura img:hover{
+    
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.conteudo p {
+    
+    flex: 0 1 auto;
+
+}
+
+.links{
+    
+    width: 35%;
+    height: auto;
+    margin-right: 0;
+    margin-left: auto;
+    box-sizing: border-box; 
+    background-color: #d3d3ff;
+    word-wrap:break-word;
+    
+}
+
+.links h2{
+    
+    border-bottom: dotted 1px black;
+    margin: 10px;
+    
+}
+@media screen and (max-width: 1024px){
+    
+    .todo{
+        
+    padding: 0 2% 0 2%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .todo{
+    
+    font-size: 1.8rem;
+    padding: 0;
+    }
+    
+    .menu{
+        background-color: #edf0ff;
+        flex-direction: column;
+    }
+    
+    .menu a{ 
+        background-color: #0085fa;
+        margin: 10px 0;
+        padding: 20px 0;
+    }
+    
+    .conteudo{
+        
+        width: auto;
+    }
+    
+    .links{
+        
+        width: 100%;
+    }
+    
+    .moldura{
+        
+        float:none;
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 8%;
+    }
+    
+   .centro{
+        
+        display: inline-block;
+    }
+    
+    .meta{
+        
+        height: 200px;
+        width: auto;
+        margin: 1rem;
+    }
+}
